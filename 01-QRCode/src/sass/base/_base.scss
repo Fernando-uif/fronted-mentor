@@ -1,0 +1,22 @@
+@import "../abstracts/variables";
+*,
+*::afer,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 10px;
+  background-color: $Light;
+}
+
+body {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 22rem;
+  border-radius: 0.8rem;
+  background-color: $White;
+  &__container {
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  &__img {
+    width: 20rem;
+    border-radius: 0.8rem;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $Dark;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  &__description {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $Grayish;
+    margin-bottom: 1rem;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+ 
