@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR code component</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./src/assets/icons/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="card">
+
+    <div class="card__container">
+
+      <div class="card__qr">
+        <picture>
+          <source media="(min-width: 650px)" srcset="./src/assets/desktop/image-qr-code.png">
+          <source media="(min-width: 850px)" srcset="./src/assets/icons/favicon-32x32.png">
+          <img class="card__img" src="./src/assets/desktop/image-qr-code.png" alt="qr-code">
+        </picture>
+      </div>
+      <div class="card__text">
+        <span class="card__title">
+          Improve your front-end skills by building projects
+        </span>
+        <span class="card__description">
+          scan the QR code to visit Frontend Mentor and take your codigtn skills to the next nevel
+        </span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
